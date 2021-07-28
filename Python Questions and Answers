@@ -1,0 +1,119 @@
+1. Question: What is the map() function used for in Python?
+
+    Answer: The map() function applies a given function to each item of an iterable. It then returns a list of the results. The value returned from the map() function can then be passed on to functions to the likes of the list() and set().
+
+    Typically, the given function is the first argument and the iterable is available as the second argument to a map() function. Several tables are given if the function takes in more than one arguments.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. Question: What is the lambda function?
+
+    Answer: An anonymous function is known as a lambda function. This function can have only one statement but can have any number of parameters.
+
+    a = lambda x,y : x+y
+    print(a(5, 6))
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. Question: How are arguments passed in Python? By value or by reference?
+
+    Answer: All of the Python is an object and all variables hold references to the object. The reference values are according to the functions; as a result, the value of the reference cannot be changed.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+4. Question: What are Python modules?
+
+    Answer: A file containing Python code like functions and variables is a Python module. A Python module is an executable file with a .py extension.
+
+    Python has built-in modules some of which are:
+
+    os
+    sys
+    math
+    random
+    data time
+    JSON
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+5. Question: What is the // operator? What is its use?
+
+    Answer: The // is a Floor Divisionoperator used for dividing two operands with the result as quotient displaying digits before the decimal point. For instance, 10//5 = 2 and 10.0//5.0 = 2.0.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+6. Question: What is the split function used for?
+
+    Answer: The split function breaks the string into shorter strings using the defined separator. It returns the list of all the words present in the string.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+7. Question: Define slicing in Python.
+
+    Answer: Slicing refers to the mechanism to select the range of items from sequence types like lists, tuples, strings.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+8. Question: How to capitalize the first letter of string?
+
+    Answer: Capitalize() method capitalizes the first letter of the string, and if the letter is already capital it returns the original string.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+9. Question: What is, not and in operators?
+
+    Answer: Operators are functions that take two or more values and returns the corresponding result.
+
+    is: returns true when two operands are true
+    not: returns inverse of a boolean value
+    in: checks if some element is present in some sequence.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+10. Question: How are modules imported in Python?
+
+      Answer: Modules are imported using the import keyword by either of the following three ways:
+
+      import array 
+      import array as arr
+      from array import *
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+11. Question: What does the method object() do?
+
+      Answer: The method returns a featureless object that is base for all classes. This method does not take any parameters.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+12. Question: Is indentation necessary in Python?
+
+      Answer: Indentation is required in Python if not done properly the code is not executed properly and might throw errors. Indentation is usually done using four space characters.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+13. Question: Define a function in Python
+
+      Answer: A block of code that is executed when it is called is defined as a function. Keyword def is used to define a Python function.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+14. Question: Define self in Python
+
+      Answer: An instance of a class or an object is self in Python. It is included as the first parameter. It helps to differentiate between the methods and attributes of a class with local variables.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+15. Question: Why are these data types known as Python’s core data types?
+
+      Answer: They are known as the core data types because they are part of the Python language itself and are always available to create other objects, you usually need to call functions in imported modules.
+
+      Most of the data types have a specific syntax for generating objects: “spam”, for example, is an expression that creates a string and determines the set of operations that can be applied to it. For this reason, main types are built into Python syntax. Instead, you must call the built-in open function to create a file object.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+16. Question: Name four of the main data types in Python?
+
+      Answer: Numbers, strings, lists, dictionaries, tuples, files, and sets are generally considered the main types of data. Types, None, and Booleans are sometimes also classified this way. The integer, floating-point, complex, fraction and decimal are numerical data types and simple strings and Unicode strings in Python 2 and text strings and byte strings in Python 3 are the types of string data types.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+17. Question: What does immutable mean and what three types of Python core data types are considered immutable?
+
+      Answer: An immutable data type is a type of object which cannot be modified after its creation. Numbers, strings, and tuples in Python fall into this category. Although you cannot modify an immutable object in place, you can always create a new one by running an expression.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+18. Question: What does sequence mean and which three types of data fall into this category?
+
+      Answer: A sequence data type is a collection of objects ordered by a specific position. In Python, Strings, lists, and tuples are the data types based on sequences. The Sequences share common sequence operations, such as indexing, concatenation, and slicing, but also have type-specific method calls.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+19. Question: Are Variables and Objects the Same?
+
+      Answer: The short answer is no.
+      * Variables can be viewed as labels that are associated with specific objects that are defined.
+      * Objects are data saved in the memory when they are created.
+      
+      >>> # Create a variable and assign it with a number
+      >>> a = 10000
+      >>> # Get the memory address for this variable
+      >>> id(a)
+      4761771248
+      >>> # Assign a string value to the "same" variable
+      >>> a = "Medium"
+      >>> # Get the memory address for this variable
+      >>> id(a)
+      4763436592
+      In the code above, we have a variable called a, which initially was a number with a particular memory address.
+      Later on, this variable was updated with a string value, which led to the variable a having a different memory address.
+      The key here is that the memory addresses are distinct for these two cases, with each referencing the distinct underlying objects in the memory, although we use the same label (a) for these objects.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+20. Question: Are Tuples Absolutely Immutable?
+
+      Answer: we should probably say that tuples are relatively immutable. If they hold mutable objects (e.g., dictionaries and lists), we can change the tuples’ values. However, it should be noted that we can never change the tuples’ underlying objects that they hold, because tuple objects are immutable in Python by definition they always contain the same objects no matter whether it’s possible to change the contained data.
